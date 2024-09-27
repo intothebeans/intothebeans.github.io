@@ -1,29 +1,14 @@
 ---
 layout: single
 classes: wide
-permalink: /
-title: "Home"
+permalink: /about
+title: "About"
 author_profile: true
 header:
   overlay_image: /assets/images/circuit-board.webp
 excerpt: >
   <p class='page__lead' style="font-family:'Georgia', serif;">“All great deeds and all great thoughts have a ridiculous beginning. Great works are often born on a street corner or in a restaurant's revolving door.”</p> <br><small style="font-family:'Georgia', serif;"><i>–Albert Camus</i></small>
-
-feature_row:
-  - image_path: /assets/images/synth.jpg
-    alt: "A moduler synthesizer"
-    title: "Modeled Modules"
-    url: /projects/modeled-modules
-    btn_class: btn--info
-    excerpt: >
-      SuperCollider extensions based on physical synthesizers
 ---
-
-## Projects
-
-{% include feature_row class="home__feature"%}
-
-## About Me
 
 My name is Aiden, and I am a recent college graduate eager to embark on the next chapter of my professional journey. I have a dual background in music and computer science, which may seem unconventional at first glance. However, computers and music have been historically intertwined. I selected music as a field of study to provide a challenging academic experience. During my secondary education, I was enrolled in a magnet program for information technology. I discovered that I have a natural aptitude for technology and prefer to learn related subjects at my own pace outside of a traditional classroom setting. Christopher Newport University offered a distinctive program in the music department that explored the overlap between music and technology. After discussing the program with the department head, I was convinced it was the right choice for me. It was challenging, particularly during the first two semesters. It was certainly a challenge to dictate melodies at eight in the morning! From practicing two hours a day to attending the required fifteen events per semester, there were times I considered abandoning the program entirely. Nevertheless, I persisted.
 

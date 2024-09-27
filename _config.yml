@@ -12,6 +12,31 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
+# neumorphic
+username: Aiden Benton
+typing_text: Developer, Musician, Privacy Enthusiast
+email: contact@aiden-benton.com
+github_username: intothebeans
+linkedin_username: aiden-benton
+show_aboutme_card: true
+about_me_description:
+show_skills_card: true
+skills_title: Skills and Strengths
+show_timeline_card: true
+timeline_title: Education and Experience
+show_projects_card: true
+show_projects: true
+projects_title: Projects
+show_os_projects: true
+os_projects_title: Open Source Projects
+show_contact_card: true
+contact_title: Contact
+contact_description: Feel free to reach out to me with any questions or opportunities.
+projects:
+  sort_by: pushed
+  exclude:
+    archived: true
+
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -89,6 +114,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - .env
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -158,6 +184,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-github-metadata
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -167,6 +194,7 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-github-metadata
 
 # Archives
 tag_archive:
