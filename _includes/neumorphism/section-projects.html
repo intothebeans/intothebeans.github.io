@@ -23,27 +23,28 @@
   </div>
 {% endif %}
 
-<h3>Projects on Github</h3>
 {% if site.show_os_projects %}
-  {% if site.projects.sort_by == 'stars' %}
+  <h3>Projects on Github</h3>
+  {% if site.projects_sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
   {% else %}
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
 
-  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
+  {% if site.exclude_archived && site.exclude_forks %}
     {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.archived %}
+  {% elsif site.exclude_archived %}
     {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.forks %}
+  {% elsif site.exclude_forks %}
     {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
   {% else %}
     {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
   {% endif %}
 
+
   <div class="projects-wrapper">
     {% for repository in filtered_repos %}
-      {% unless site.projects.exclude.projects contains repository.name %}
+      {% unless site.exclude_projects contains repository.name %}
         <div class="project neumorphism-card" data-aos="zoom-in-down">
           <div class="name-link-wrapper">
             <h3>{{ repository.name }}</h3>

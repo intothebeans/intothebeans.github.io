@@ -222,9 +222,6 @@ linkedin_username: aiden-benton
 show_projects: true
 show_os_projects: true
 repository: intothebeans/intothebeans.github.io
-projects:
-  sort_by: pushed
-  exclude:
-    archived: true
-    projects:
-      - intothebeans
+projects_sort_by: pushed
+exclude_archived: true
+exclude_projects: "intothebeans"
