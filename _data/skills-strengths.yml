@@ -1,0 +1,10 @@
+- name: Communication
+  weight: 5
+- name: Teamwork
+  weight: 4
+- name: Problem Solving
+  weight: 5
+- name: Creativity
+  weight: 3
+- name: Leadership
+  weight: 3

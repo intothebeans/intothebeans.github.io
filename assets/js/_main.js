@@ -69,7 +69,10 @@ $(document).ready(function () {
     if (!tocElement) return;
     if (window.getComputedStyle(tocElement).position !== "sticky") return;
 
-    if (target.parentElement.classList.contains("toc__menu") && target == target.parentElement.firstElementChild) {
+    if (
+      target.parentElement.classList.contains("toc__menu") &&
+      target == target.parentElement.firstElementChild
+    ) {
       // Scroll to top instead
       document.querySelector("nav.toc header").scrollIntoView(scrollOptions);
     } else {
@@ -85,7 +88,9 @@ $(document).ready(function () {
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
-  ).has("> img").addClass("image-popup");
+  )
+    .has("> img")
+    .addClass("image-popup");
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
@@ -199,9 +204,9 @@ $(document).ready(function () {
       if (thisButton.interval !== null) {
         clearInterval(thisButton.interval);
       }
-      thisButton.classList.add('copied');
+      thisButton.classList.add("copied");
       thisButton.interval = setTimeout(function () {
-        thisButton.classList.remove('copied');
+        thisButton.classList.remove("copied");
         clearInterval(thisButton.interval);
         thisButton.interval = null;
       }, 1500);
@@ -222,7 +227,8 @@ $(document).ready(function () {
         var copyButton = document.createElement("button");
         copyButton.title = "Copy to clipboard";
         copyButton.className = "clipboard-copy-button";
-        copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-fw fa-copy"></i><i class="fas fa-fw fa-check copied"></i>';
+        copyButton.innerHTML =
+          '<span class="sr-only">Copy code</span><i class="far fa-fw fa-copy"></i><i class="fas fa-fw fa-check copied"></i>';
         copyButton.addEventListener("click", copyButtonEventListener);
         container.prepend(copyButton);
       });

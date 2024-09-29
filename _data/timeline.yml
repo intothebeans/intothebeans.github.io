@@ -5,57 +5,53 @@
 # > tags: List of tags you want to associate with the entry
 # > timeline-side: The side on which you want to display the entry: left or right
 
-# Example of a timeline entry
-# - title: airbnb
-#   title-url: https://example.com/
-#   date: Sep 2019 - Present
-#   subtitle: Fullstack Developer
-#   tags:
-#     - tag: React
-#     - tag: Javascript
-#     - tag: Ruby
-#     - tag: Rails
-#   timeline-side: right
-
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+- title: CNU Office of Research
+  date: 2023 - 2024
+  subtitle: Research Apprentice
+  title-url: https://cnu.edu/research/programs/
   tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
+    - tag: Adobe Creative Suite
+    - tag: Trouble Shooting and Repair
+    - tag: Management
+    - tag: Audio Engineering
   timeline-side: right
 
-- title: Google
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
+- title: CNU Department of Music
+  date: 2022 - 2024
+  subtitle: Recording Internship Lead
+  title-url: https://cnu.edu/academics/departments/music/areas/creativestudies/
   tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
-  timeline-side: right
-
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+    - tag: Leadership
+    - tag: Audio Engineering
+    - tag: Live Sound
   timeline-side: left
 
-- title: Facebook
-  title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+- title: Kinsale Insurance
+  date: 2023
+  subtitle: Underwriting Assistant Intern
+  title-url: https://www.kinsaleins.com/
   tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+    - tag: Microsoft Office
+    - tag: Data Entry
+    - tag: AutoHotKey
   timeline-side: right
-
-- title: Super University
-  title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+- title: Christopher Newport University
+  title-url: https://cnu.edu/academics/departments/music/areas/creativestudies/
+  date: 2020 - 2024
+  subtitle: B.A. Music Technology; Minor in Computer Science
   timeline-side: left
+  tags:
+    - tag: Audio Engineering
+    - tag: Music Theory
+    - tag: Computer Science
+    - tag: Music Production
+
+- title: Center for Information Technology
+  title-url: https://informationtechnology.henricoschools.us/page/about
+  date: 2016 - 2020
+  timeline-side: rigth
+  tags:
+    - tag: Computer Science
+    - tag: Cybersecurity
+    - tag: Networking
+    - tag: Programming

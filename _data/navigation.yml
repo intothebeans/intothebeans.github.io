@@ -1,9 +1,11 @@
 main:
+  - title: "About"
+    url: /
+  - title: "Recent"
+    url: /blog/index.html
   - title: "Projects"
-    url: /posts/
+    url: /projects/
   - title: "Posts"
-    url: /categories/
+    url: /posts/
   - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/

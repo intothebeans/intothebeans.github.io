@@ -12,30 +12,6 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-# neumorphic
-username: Aiden Benton
-typing_text: Developer, Musician, Privacy Enthusiast
-email: contact@aiden-benton.com
-github_username: intothebeans
-linkedin_username: aiden-benton
-show_aboutme_card: true
-about_me_description:
-show_skills_card: true
-skills_title: Skills and Strengths
-show_timeline_card: true
-timeline_title: Education and Experience
-show_projects_card: true
-show_projects: true
-projects_title: Projects
-show_os_projects: true
-os_projects_title: Open Source Projects
-show_contact_card: true
-contact_title: Contact
-contact_description: Feel free to reach out to me with any questions or opportunities.
-projects:
-  sort_by: pushed
-  exclude:
-    archived: true
 
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -48,9 +24,8 @@ name: "Aiden Benton"
 description: "Aiden Benton's personal website sharing projects and ideas."
 url: # TODO: update for production # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: "intothebeans/intothebeans.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: "/assets/images/teaser-fallback.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/images/logo-88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: " " # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: # true, false (default)
 words_per_minute: 200
@@ -174,7 +149,7 @@ timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_t
 
 # Pagination with jekyll-paginate
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 
 # Plugins (previously gems:)
 plugins:
@@ -228,5 +203,28 @@ defaults:
       layout: single
       author_profile: true
 
-header_scripts:
+head_scripts:
   - https://buttons.github.io/buttons.js
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  presentations:
+    output: false
+    permalink: /:collection/:path/
+
+# neumorphic
+username: Aiden Benton
+email: contact@aiden-benton.com
+github_username: intothebeans
+linkedin_username: aiden-benton
+show_projects: true
+show_os_projects: true
+repository: intothebeans/intothebeans.github.io
+projects:
+  sort_by: pushed
+  exclude:
+    archived: true
+    projects:
+      - intothebeans

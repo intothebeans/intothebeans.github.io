@@ -157,19 +157,12 @@ task :copyright => COPYRIGHT_FILES
 CLEAN.include(*COPYRIGHT_FILES)
 
 JS_FILES = ["assets/js/vendor/jquery/jquery-3.6.0.js"] + Dir.glob("assets/js/plugins/*.js") + ["assets/js/_main.js"]
-JS_FILES_2 = ["assets/js/vendor/jquery/jquery-3.6.0.js"] + Dir.glob("assets/js/plugins/*.js") + ["assets/js/_neumorphism.js"]
 JS_TARGET = "assets/js/main.min.js"
-JS_TARGET_2 = "assets/js/neumorphism.min.js"
 
-task :js => [JS_TARGET, JS_TARGET_2]
+task :js => JS_TARGET
 
 file JS_TARGET => ["_includes/copyright.js"] + JS_FILES do |t|
   sh Shellwords.join(%w[npx uglifyjs -c --comments /@mmistakes/ --source-map -m -o] +
-    [t.name] + t.prerequisites)
-end
-
-file JS_TARGET_2 => ["_includes/copyright.js"] + JS_FILES_2 do |t|
-  sh Shellwords.join(%w[npx uglifyjs -c --source-map -m -o] +
     [t.name] + t.prerequisites)
 end
 
