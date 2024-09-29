@@ -14,8 +14,8 @@
 #     - tag: Node
 
 - name: Home Server
-  descr: "I have a home server that I use for various things. It runs on a Raspberry Pi 4 and is used for hosting a Nextcloud instance, a code server instance, and a few other services."
+  descr: "A home server that I use for various things. It runs on a Raspberry Pi 4 and is used for hosting a Nextcloud instance and a few other services."
   tags:
     - tag: Raspberry Pi
     - tag: Nextcloud
-    - tag: Homelab
+    - tag: Docker
