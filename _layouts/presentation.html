@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    {% include head/custom.html %}
+
+    <title>{{page.title}} | {{site.title}}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/js/reveal.js/dist/reset.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/js/reveal.js/dist/reveal.css' | relative_url }}">
+    {% if page.theme %}
+    <link rel="stylesheet" href="{{ '/assets/js/reveal.js/dist/theme/' | relative_url }}{{page.theme}}.css" id="theme">
+    {% else %}
+    <link rel="stylesheet" href="{{ '/assets/js/reveal.js/dist/theme/custom.css' | relative_url}}" id="theme">
+    {% endif %}
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="{{ '/assets/js/reveal.js/plugin/highlight/atom-one-dark.css' | realtive_url }}"
+        id="highlight-theme">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            {{ content }}
+        </div>
+    </div>
+
+    <script src="{{ '/assets/js/reveal.js/dist/reveal.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reveal.js/plugin/markdown/markdown.js' | relative_url}}"></script>
+    <script src="{{ '/assets/js/reveal.js/plugin/highlight/highlight.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reveal.js/plugin/menu/menu.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reveal.js/plugin/helpbutton/helpbutton.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reveal.js/plugin/pdfexport/pdfexport.js' | relative_url }}"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            {% if page.transition %}
+        transition: '{{ page.transition }}',
+            {% endif %}
+        menu: {
+            hideMissingTitles: true,
+                markers: true,
+                    transitions: true,
+                        theme: [
+                            { name: 'Default', theme: "{{ '/assets/js/reveal.js/dist/theme/custom.css' | relative_url }}" },
+                            { name: 'Black', theme: "{{ '/assets/js/reveal.js/dist/theme/black.css' | relative_url }}" },
+                            { name: 'White', theme: "{{ '/assets/js/reveal.js/dist/theme/white.css' | relative_url }}" },
+                            { name: 'League', theme: "{{ '/assets/js/reveal.js/dist/theme/league.css' | relative_url }}" },
+                            { name: 'Sky', theme: "{{ '/assets/js/reveal.js/dist/theme/sky.css' | relative_url }}" },
+                            { name: 'Beige', theme: "{{ '/assets/js/reveal.js/dist/theme/beige.css' | relative_url }}" },
+                            { name: 'Simple', theme: "{{ '/assets/js/reveal.js/dist/theme/simple.css' | relative_url }}" },
+                            { name: 'Serif', theme: "{{ '/assets/js/reveal.js/dist/theme/serif.css' | relative_url }}" },
+                            { name: 'Blood', theme: "{{ '/assets/js/reveal.js/dist/theme/blood.css' | relative_url }}" },
+                            { name: 'Night', theme: "{{ '/assets/js/reveal.js/dist/theme/night.css' | relative_url }}" },
+                            { name: 'Moon', theme: "{{ '/assets/js/reveal.js/dist/theme/moon.css' | relative_url }}" },
+                            { name: 'Solarized', theme: "{{ '/assets/js/reveal.js/dist/theme/solarized.css' | relative_url }}" },
+                            { name: 'Dracula', theme: "{{ '/assets/js/reveal.js/dist/theme/dracula.css' | relative_url }}" },
+                            { name: 'Code: Dark', highlightTheme: "{{ '/assets/js/reveal.js/plugin/highlight/atom-one-dark.css' | relative_url }}" },
+                            { name: 'Code: Light', highlightTheme: "{{ '/assets/js/reveal.js/plugin/highlight/atom-one-light.css' | relative_url }}" },
+                            { name: 'Code: Vivid', highlightTheme: "{{ '/assets/js/reveal.js/plugin/highlight/monokai.css' | relative_url }}" },
+                            { name: 'Code: Gruvbox', highlightTheme: "{{'/assets/js/reveal.js/plugin/highlight/gruvbox-dark-hard.css' | relative_url }}"},
+                            { name: 'Code: Gruvbox Light', highlightTheme: "{{'/assets/js/reveal.js/plugin/highlight/gruvbox-light-hard.css' | relative_url }}"}
+                        ]
+        },
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealMenu, HelpButton, PdfExport]
+        });
+    </script>
+</body>
+
+</html>
