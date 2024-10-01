@@ -14,7 +14,7 @@ excerpt: >
 
 ## About Me
 
-My name is Aiden, and I am a recent college graduate with a dual background in My name is Aiden, and I recently graduated from college with a dual background in Computer Science and Music. My primary interests are computer networking and cybersecurity, and I also enjoy programming, writing music, and learning new things. As Socrates said:
+My name is Aiden, and I recently graduated from college with a dual background in Computer Science and Music. My primary interests are computer networking and cybersecurity, and I also enjoy programming, writing music, and learning new things. As Socrates said:
 
 > "An unexamined life is not worth living."
 
