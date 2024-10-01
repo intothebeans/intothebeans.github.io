@@ -22,7 +22,7 @@ title_separator: "|"
 subtitle: # site tagline that appears below site title in masthead
 name: "Aiden Benton"
 description: "Aiden Benton's personal website sharing projects and ideas."
-url: # TODO: update for production # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: 127.0.0.1:4000 # TODO: update for production # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 teaser: "/assets/images/teaser-fallback.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -203,15 +203,12 @@ defaults:
       layout: single
       author_profile: true
 
-head_scripts:
-  - https://buttons.github.io/buttons.js
-
 collections:
   projects:
     output: true
     permalink: /:collection/:path/
   presentations:
-    output: false
+    output: true
     permalink: /:collection/:path/
 
 # neumorphic

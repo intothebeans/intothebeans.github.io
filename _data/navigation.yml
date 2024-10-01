@@ -1,6 +1,4 @@
 main:
-  - title: "About"
-    url: /
   - title: "Recent"
     url: /blog/index.html
   - title: "Projects"
@@ -9,3 +7,5 @@ main:
     url: /posts/
   - title: "Tags"
     url: /tags/
+  - title: "About"
+    url: /
