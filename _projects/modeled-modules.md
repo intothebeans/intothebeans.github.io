@@ -8,27 +8,30 @@ toc: true
 excerpt: Information about the Modeled Modules project
 ---
 
-FIXME: rewrite this donkey water thing. Be more thorough. Use sections geebz
+## Background
 
-A collection of [SuperCollider](https://supercollider.github.io) extensions which model a number of analog synthesizer models. This project was undertaken as my senior capstone project. Deciding what to do for my project was not an easy task. In my studies I had worked in a studio, built audio hardware, worked with live sound, and created many musical projects, but I was looking for something which tied more into my passion for computer science and development. I didn't want to make a basic plugin using an online tutorial and framework like JUCE. I wanted to do something more hands on, where I had to design and solve the problems myself. Creating custom extensions for SuperCollider based on existing hardware synthesizer modules fit this perfectly. I had to first figure out roughly how each module worked, design the digital counterpart, and implement the design. Learning the SuperCollider server API and digital signal processing proved a fun challenge. SuperCollider is primarily written in C, but the modern API is meant for C++. Diving into the SuperCollider codebase for examples involved translating not only on the fundamental "what does this function do" level but also reframing into the adapted C++ API. I learned plenty of new concepts while working on this project. My biggest challenge was the Ripples module because I tried to implement my own IIR filters in the code. I did not have the mathematical background to learn to design digital filters in one semester on top of everything else I had to do. That's when I learned how to compile external libraries and the difference between static vs. dynamic linking (that one held me up for a while). Overall, this project served as a way to gain further knowledge of digital signal processing and programming for real time audio. It's crazy to see how far things have come from MUSIC I.
+This project was completed to fulfill the capstone requirement for my degree. It consists of a collection of three [SuperCollider](https://supercollider.github.io/) extensions designed based on three analog synthesizer modules. It is open source and available to download on [GitHub](https://github.com/intothebeans/sc-modeled-modules). The goal of the project was to synthesize my creative and technical skills and create a useful product for the SuperCollider community. My background in SuperCollider and computer science influenced the project's direction, and my experience with analog synthesizers inspired the choice of modules. The project was completed over the course of a semester and required a significant amount of research, coding, and testing. My process and results were documented in a paper and presentation.
 
 <a href="/assets/Capstone.pdf" class="btn btn--primary">Download Paper</a>
 
-<iframe src="https://ghbtns.com/github-btn.html?user=intothebeans&repo=sc-modeledmodules&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+## Technologies
 
-<iframe src="https://ghbtns.com/github-btn.html?user=intothebeans&repo=sc-modeledmodules&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+- SuperCollider
+- C++
+- Cmake
+- Git
+- Github Actions
+- reveal.js
 
 ## Video
 
-The video of this presentation is currently in the possesion of my university. I am in the process of procuring it.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XfUUOrmPRGA?si=eQzj_tKxsKGXNGh9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Presentation
+## Slides
 
 <iframe width="800" height="400" marginheight="0" marginwidth="0" src="/presentations/modeled-modules">
 <p>Browser doesn't support iFrames</p>
 </iframe>
-
-Without the video of my presentation, there is not much the slides provide other than the basic structure. My personal philosophy is that presentation visuals should be an outline not a script. The presentation was created using reveal.js and a custom theme.
 
 ### Bibliography
 
